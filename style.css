@@ -1,5 +1,6 @@
 html,
 body {
+    background: rgb(25 27 39);
     width: 100%;
     
     margin: 0;
@@ -110,7 +111,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rgb(25 27 39);
 }
 
 .proposal {
@@ -122,6 +122,8 @@ main {
 }
 
 .container {
+    display: grid;
+    gap: 1em;
     flex-grow: 1;
     max-width: 800px;
     margin-bottom: 8em;
@@ -148,7 +150,7 @@ main {
     color: rgb(60 213 140);
 }
 
-.header-proposal{
+.header-proposal {
     font-weight: bold;
     color: rgb(60 213 140);
     align-items: center;
@@ -165,9 +167,27 @@ table, th, td {
     border: 1px solid white;
     border-collapse: collapse;
    
-  }
+}
  
-  th,td{
+th,td{
     text-align: center;
-      width: 10%;
-  }
+    width: 10%;
+}
+
+.team-member-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 240px;
+    gap: 1em;
+}
+
+.team-member-image-container > div {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
