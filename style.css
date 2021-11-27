@@ -68,8 +68,6 @@ button {
     background-color: transparent;
     border: 0;
     font: inherit;
-
-    
 }
 
 button:focus {
@@ -108,7 +106,6 @@ sup { top: -0.5em; }
 /* content */
 main {
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 100vh;
 }
